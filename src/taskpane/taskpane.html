@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Basic Excel Add-in</title>
+    <script>
+        if ('noModule' in HTMLScriptElement.prototype) {
+            var script = document.createElement('script');
+            script.type = 'module';
+            script.src = './taskpane.js';
+            document.head.appendChild(script);
+        } else {
+            var script = document.createElement('script');
+            script.src = './taskpane-legacy.js';
+            document.head.appendChild(script);
+        }
+    </script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h2>Basic Excel Add-in</h2>
+    <button id="actionButton">Click Me</button>
+    <div id="output"></div>
+</body>
+</html>
