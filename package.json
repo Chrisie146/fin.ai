@@ -30,7 +30,8 @@
     "cors": "^2.8.5",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
-    "regenerator-runtime": "^0.14.1"
+    "regenerator-runtime": "^0.14.1",
+    "webpack-cli": "^5.1.4"
   },
   "devDependencies": {
     "@babel/core": "^7.24.0",
